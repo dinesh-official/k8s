@@ -6,7 +6,7 @@ kubectl [ACTION] [RESOURCE] [NAME] [FLAGS]
 
 => Action  
 ```
-what you want to do like get , create 
+What you want to do, like get, create 
 
 Actions
   - get
@@ -51,7 +51,11 @@ Actions
 | `version`       | Show Kubernetes client/server version      | `kubectl version`                                             |
 
 
+=> Resource
+```
 
+
+```
 
 
 
