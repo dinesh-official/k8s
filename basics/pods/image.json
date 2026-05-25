@@ -1,0 +1,9 @@
+{
+  "auths": {
+    "450321244603.dkr.ecr.ap-south-1.amazonaws.com/dhangpt-api": {
+      "username": "AWS",
+      "password": "YOUR_ECR_PASSWORD",
+      "auth": "BASE64_OF_AWS:PASSWORD"
+    }
+  }
+}
