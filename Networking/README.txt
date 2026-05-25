@@ -39,21 +39,16 @@ Service
 kube-proxy
 ----------
     - Kube-proxy is an makes virtual networking actualy work 
-      Service Ip is an virtual networking and the kube-proxy makes it actualy work
-    - kube-proxy runs on every node 
-
-    please refer the arichiture here at res/kube-proxy.jpg  
-
-  User/App
-      ↓
-  Service IP
-  10.96.0.15
-      ↓
-  kube-proxy
-      ↓
-  Chooses Pod
-      ↓
-  10.244.0.5
+        User/App
+            ↓
+        Service IP
+        10.96.0.15
+            ↓
+        kube-proxy
+            ↓
+        Chooses Pod
+            ↓
+        10.244.0.5
 
 
 CNI Plugin
@@ -84,4 +79,3 @@ NetworkPolicy
 -------------
     - NetworkPolicy Which Pod can talk to which Pod
     - This is like an security group in AWS SG will work in Vm level and NP will work in pod level 
-    
