@@ -58,13 +58,30 @@ kube-proxy
 
 CNI Plugin
 ----------
+    - Used for an interal communication for eg:- 
+    (say for an example if 3 Component of app need to communicat each other but this is hosted in 3 differ nodes hree CNI creates an interface to make an connection )
+
+    - Node ↔ Node networking works
+    - Pod ↔ Pod communication works
 
 DNS
----
+----
     - Kubernetes automatically creates DNS names.
+    - Kubernetes DNS = system that converts service names into IP addresses inside the cluster
+    - Types of DNS names
+        - Service name -> ( backend-service )
+        - Full DNS name ->  ( backend-service.default.svc.cluster.local )
+          
 
 Ingress
 -------
+    - Ingress is used to access Kubernetes apps using a simple website link (URL).
+    - without Ingress the acess url would be IP:30080 → frontend , IP:30081 → backend , IP:30082 → admin
+    - with Ingress  ,shop.com → Frontend , api.shop.com → Backend, admin.shop.com  → Admin panel
+
 
 NetworkPolicy
 -------------
+    - NetworkPolicy Which Pod can talk to which Pod
+    - This is like an security group in AWS SG will work in Vm level and NP will work in pod level 
+    
